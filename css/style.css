@@ -1,0 +1,420 @@
+/* General Style
+============================= */
+body {
+	font-family: 'Ubuntu', sans-serif;
+	border-top: 3px solid #8e44ad;
+	background-color: #1F253D;
+}
+.container {
+	/*background-color: #394263;*/
+}
+.main-title {
+  border-bottom: 2px dashed;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.back-btn > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-btn > a:hover {
+  color: #bdc3c7;
+}
+.logo svg {
+	width: 100%; 
+	height: 200px;
+}
+.logo .logo-text {
+  font-size: 5em;
+}
+.logo .text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 3px;
+  -webkit-animation: stroke-offset 9s infinite linear;
+          animation: stroke-offset 9s infinite linear;
+}
+.logo .text-copy:nth-child(1) {
+  stroke: #360745;
+  stroke-dashoffset: 7%;
+}
+.logo .text-copy:nth-child(2) {
+  stroke: #D61C59;
+  stroke-dashoffset: 14%;
+}
+.logo .text-copy:nth-child(3) {
+  stroke: #E7D84B;
+  stroke-dashoffset: 21%;
+}
+.logo .text-copy:nth-child(4) {
+  stroke: #EFEAC5;
+  stroke-dashoffset: 28%;
+}
+.logo .text-copy:nth-child(5) {
+  stroke: #1B8798;
+  stroke-dashoffset: 35%;
+}
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+/* Page Loader */
+#page-loader {
+  background-color: #2c3e50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+}
+#page-loader .smooth-loader {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 40%;
+  left: calc(50% - 40px);
+}
+#page-loader .ball-one, 
+#page-loader .ball-two {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  -moz-animation: bounce 2.0s infinite ease-in-out;
+  -o-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+#page-loader .ball-one {
+  -webkit-animation-delay: -1.0s;
+  -moz-animation-delay: -1.0s;
+  -o-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+@-moz-keyframes bounce {
+  0%, 100% { -moz-transform: scale(0.0) }
+  50% { -moz-transform: scale(1.0) }
+}
+@-o-keyframes bounce {
+  0%, 100% { -o-transform: scale(0.0) }
+  50% { -o-transform: scale(1.0) }
+}
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+    -moz-transform: scale(0.0);
+    -o-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+  }
+}
+
+
+
+/* Tools Style
+============================= */
+.minify .strip-css  {
+	color: white;
+	background-color: #e67e22;
+  background: -webkit-repeating-linear-gradient(145deg, #e67e22, #e67e22 10px, #d35400 10px, #d35400 20px);
+  background: repeating-linear-gradient(-55deg, #e67e22, #e67e22 10px, #d35400 10px, #d35400 20px);
+  margin: 0px;
+  height: 10px;
+}
+.minify .strip-html  {
+	color: white;
+	background-color: #f1c40f;
+  background: -webkit-repeating-linear-gradient(145deg, #f1c40f, #f1c40f 10px, #f39c12 10px, #f39c12 20px);
+  background: repeating-linear-gradient(-55deg, #f1c40f, #f1c40f 10px, #f39c12 10px, #f39c12 20px);
+  margin: 0px;
+  height: 10px;
+}
+.minify .strip-js  {
+	color: white;
+	background-color: #e74c3c;
+  background: -webkit-repeating-linear-gradient(145deg, #e74c3c, #e74c3c 10px, #c0392b 10px, #c0392b 20px);
+  background: repeating-linear-gradient(-55deg, #e74c3c, #e74c3c 10px, #c0392b 10px, #c0392b 20px);
+  margin: 0px;
+  height: 10px;
+}
+.minify .btn {
+	/*font-style: italic;*/
+  font-weight: bold;
+}
+.minify .box-css,
+.minify .box-html,
+.minify .box-js {
+	background-color: #fff;
+	padding: 10px 15px;
+	color: #333;
+}
+
+/* Animated Box */
+.animate-css-box,
+.animate-html-box,
+.animate-js-box {
+  margin-bottom: 20px;
+}
+.animate-css-box {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.animate-html-box {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.animate-js-box {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+/* Editor Style
+============================= */
+.editor .numberedtextarea-wrapper { 
+  position: relative; 
+}
+.editor .numberedtextarea-line-numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+.editor .numberedtextarea-number {
+  padding-right: 10px;
+  text-align: right;
+  font-size: 1.3em;
+}
+.editor .textarea {
+  background-color: #394263; 
+  padding-top: 15px;
+}
+.editor .textarea textarea {
+  background-color: #394263;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  width: 100%;
+  height: 315px;
+  border: 0px;
+  padding: 0px 10px;
+  max-width: 1140px;
+  overflow: auto;
+  resize: none;
+}
+.editor .editor-title {
+  background-color: #16a085;
+  color: #fff;
+  padding: 7px 15px;
+  margin: 0px;
+  font-size: 18px;
+  text-align: center;
+}
+.editor .editor-button {
+  margin: 15px 0px;
+  text-align: right;
+}
+.editor .editor-button .btn {
+  font-weight: bold;
+  margin: 0px 5px;
+}
+.editor .editor-button .clear {
+  margin-right: 0px;
+}
+
+/* Modal Style
+============================= */
+#myModal .modal-body {
+  max-height: 400px;
+  overflow: auto;
+}
+#myModal .modal-header {
+  padding: 15px 20px;
+}
+#myModal .modal-header .modal-title,
+#myModal .modal-header .close {
+  font-weight: bold;
+}
+#myModal .modal-body {
+  padding: 20px;
+}
+#myModal .modal-footer {
+  padding: 15px 20px;
+}
+#myModal .modal-footer .btn {
+  font-weight: bold;
+}
+.sweet-alert button.cancel{
+  background-color: #76DD55;
+}
+.sweet-alert button.cancel:hover{
+  background-color: #76BB55;
+}
+
+/* Media Query
+============================= */
+
+@media screen and (max-width: 479px) {
+  .logo svg {
+    height: 150px;
+  }
+  .logo .logo-text {
+    font-size: 3em;
+  }
+}
+
+
+/* Button file upload button
+================================== */
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style */
+
+.inputfile-6 + label {
+    color: #d3394c;
+}
+
+.inputfile-6 + label {
+    border: 1px solid #d3394c;
+    background-color: #f1e5e6;
+    padding: 0;
+}
+
+.inputfile-6:focus + label,
+.inputfile-6.has-focus + label,
+.inputfile-6 + label:hover {
+    border-color: #722040;
+}
+
+.inputfile-6 + label span,
+.inputfile-6 + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.inputfile-6 + label span {
+    width: 200px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-6 + label strong {
+    height: 100%;
+    color: #f1e5e6;
+    background-color: #d3394c;
+    display: inline-block;
+}
+
+.inputfile-6:focus + label strong,
+.inputfile-6.has-focus + label strong,
+.inputfile-6 + label:hover strong {
+    background-color: #722040;
+}
+
+@media screen and (max-width: 50em) {
+  .inputfile-6 + label strong {
+    display: block;
+  }
+}
+/* ================== */
+
+.footer{
+  padding: 20px 0; 
+}
+
+.footer-text {
+  color: #959595;
+}
+
+
+
