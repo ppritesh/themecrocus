@@ -125,15 +125,8 @@ $( "#form" ).submit(function( event ) {
 		});
 
 	} else {
-
-		swal({
-			title: "Sorry!",
-			text: "Textarea field can't be blank!",
-			type: "error",
-			confirmButtonText: "Close",
-			confirmButtonColor: "#c0392b"
-		});
-
+		
+		set_sweet_message("Sorry!",  "Textarea field can't be blank!", "error");
 	}
 
 });
